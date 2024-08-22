@@ -1,0 +1,53 @@
+/* Queries for general responsive behavior */
+@media (max-width: 1200px) {
+  .skills-container #skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .work-experiance-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation-bar nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .skills-container #skills {
+    grid-template-columns: 1fr;
+  }
+
+  .work-experiance-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "job-one"
+      "job-two"
+      "job-three";
+  }
+}
+
+@media (max-width: 576px) {
+  .summary-container p {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .skills-container #skills {
+    padding: 1rem;
+  }
+
+  .work-experiance-container div {
+    padding: 1rem;
+  }
+
+  .main-container {
+    margin: 1rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+}
